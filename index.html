@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Retro scanline overlay, purely decorative -->
+  <div class="scanlines"></div>
+
+  <div class="app-shell">
+
+    <header class="hero">
+      <p class="crt-label">// portfolio.exe</p>
+      <h1>RIZALDI SAKIM SUHADI</h1> <!-- Add your name here -->
+      <h2>Industrial IoT &amp; DevOps Engineer | Cybersecurity Enthusiast</h2>
+      <!-- CONTACT INFO INPUT: update these details/links to match your CV -->
+      <p class="hero-meta">Jeddah, Saudi Arabia &nbsp;·&nbsp; rizaldisakims@gmail.com &nbsp;·&nbsp; +966 56 795 4116</p>
+      <p class="hero-links">
+        <a href="https://linkedin.com/in/rizaldisakimsuhadi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/rizaldisakim" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </header>
+
+    <!--
+      Each section below is a native <details> element grouped with
+      name="portfolio" so only one panel opens at a time (click a
+      title to expand it, click again or open another to collapse it).
+      No JS is needed for the accordion behavior itself.
+    -->
+    <main class="accordion-list">
+
+      <details class="accordion-item about" name="portfolio">
+        <summary class="accordion-header">
+          <span class="title"><span class="tag">&lt;</span>About Me<span class="tag">/&gt;</span></span>
+        </summary>
+        <div class="accordion-body">
+          <!--
+            ABOUT ME INPUT:
+            Replace the paragraph below with a short summary of who you are,
+            what drives you, and what kind of work you're looking for.
+          -->
+          <p>Highly disciplined Computer Science student pursuing an online degree while simultaneously maintaining a 4-year full-time career in manufacturing operations. Proven track record in Industrial IoT (IIoT) deployment and system optimization, bridging operational workflows (OT) and information technology (IT) by modernizing shop-floor legacy systems into automated infrastructures. Backed by hands-on Linux administration, DevOps principles, and certified Systems Integrator credentials. Fully bilingual and fluent in Indonesian, English, Arabic, and German (B1), bringing strong time-management, systems security awareness, and cross-functional leadership to global environments.</p>
+        </div>
+      </details>
+
+      <!-- ============================================================
+           EXPERIENCE SECTION
+           Add one .card block per job/role. Duplicate the block marked
+           below and fill in: role, company/place, duration, and a short
+           description of your responsibilities or achievements.
+      ============================================================= -->
+      <details class="accordion-item experience" name="portfolio">
+        <summary class="accordion-header">
+          <span class="title"><span class="tag">&lt;</span>Experience<span class="tag">/&gt;</span></span>
+        </summary>
+        <div class="accordion-body">
+          <div class="card-grid">
+
+            <!-- EXPERIENCE ENTRY 1 - duplicate this .card to add more roles -->
+            <div class="card">
+              <h3>Industrial IoT Development Support</h3>
+              <span class="card-meta">Pinehill Arabia Food Ltd. &mdash; Jeddah, Saudi Arabia</span>
+              <span class="card-date">04/2026 &ndash; Present</span>
+              <p>Designed and deployed a native Linux-based edge gateway platform using Raspberry Pi 5 and Zigbee networks across fryer lines 3 and 4; engineered real-time MQTT and Node-RED data pipelines into an InfluxDB time-series database with Grafana dashboards and automated Slack alerting, as part of the BINUS Enrichment Program Individual Development Project.</p>
+            </div>
+
+            <!-- EXPERIENCE ENTRY 2 -->
+            <div class="card">
+              <h3>Production Administrator</h3>
+              <span class="card-meta">Pinehill Arabia Food Ltd. &mdash; Jeddah, Saudi Arabia</span>
+              <span class="card-date">04/2022 &ndash; Present</span>
+              <p>Executes daily manufacturing data reconciliation and manages ledger posting for material consumption and production outputs within Microsoft Dynamics NAV ERP, while orchestrating procurement workflows by processing Purchase Requisitions (PR) for technical production supplies, sanitation assets, and office infrastructure.</p>
+            </div>
+
+            <!-- EXPERIENCE ENTRY 3 -->
+            <div class="card">
+              <h3>Cybersecurity Engineer &amp; Penetration Tester Internship</h3>
+              <span class="card-meta">Siber Expert Asia (PT. Keamanan Digital Indonesia) &mdash; Remote, Yogyakarta, Indonesia</span>
+              <span class="card-date">03/2025 &ndash; 04/2025</span>
+              <p>Monitored enterprise system performance, virtualization layer health, and baremetal infrastructure resource utilization on a Proxmox server deployment. Conducted formal security and vulnerability assessments using Kali Linux, Metasploit, Nmap, Burp Suite, and Wireshark to isolate, analyze, and remediate internal network threats.</p>
+            </div>
+
+            <!-- EXPERIENCE ENTRY 4 (Education) -->
+            <div class="card">
+              <h3>Bachelor of Computer Science</h3>
+              <span class="card-meta">Universitas Bina Nusantara (BINUS Online) &mdash; Jakarta, Indonesia</span>
+              <span class="card-date">Expected 03/2027 &middot; GPA 3.46 / 4.00</span>
+              <p>Online degree pursued alongside a full-time manufacturing career; active member of Google Developer Groups on Campus (2023&ndash;2025) and Cyber Security Community BINUS (2024&ndash;2025).</p>
+            </div>
+
+            <!-- Add more experience cards here -->
+
+          </div>
+        </div>
+      </details>
+
+      <!-- ============================================================
+           SKILLS SECTION
+           Add or remove skill "pills" inside the .skill-tags list.
+           Group them however makes sense for you (technical, tools,
+           soft skills, etc).
+      ============================================================= -->
+      <details class="accordion-item skills" name="portfolio">
+        <summary class="accordion-header">
+          <span class="title"><span class="tag">&lt;</span>Skills &amp; Expertise<span class="tag">/&gt;</span></span>
+        </summary>
+        <div class="accordion-body">
+          <p>My expertise spans industrial IoT, DevOps, and cybersecurity:</p>
+          <ul class="skill-tags">
+            <!-- SKILL INPUT: add/remove <li> pills as needed -->
+            <li>Linux (Ubuntu Server/Desktop)</li>
+            <li>Raspberry Pi Edge Gateways</li>
+            <li>Docker &amp; Containerized Stacks</li>
+            <li>AWS Core Essentials</li>
+            <li>Virtual Private Servers (VPS)</li>
+            <li>System Administration</li>
+            <li>SSH Hardening</li>
+            <li>Network Vulnerability Assessment</li>
+            <li>MQTT (Mosquitto &amp; Zigbee2MQTT)</li>
+            <li>Node-RED</li>
+            <li>Zigbee Wireless Sensor Networks</li>
+            <li>InfluxDB</li>
+            <li>Prometheus</li>
+            <li>Grafana</li>
+            <li>Microsoft Dynamics NAV ERP</li>
+            <li>Advanced Excel &amp; Data Reconciliation</li>
+            <li>Kali Linux</li>
+            <li>Metasploit</li>
+            <li>Nmap</li>
+            <li>Burp Suite</li>
+            <li>Wireshark</li>
+            <!-- Add more skill pills here -->
+          </ul>
+        </div>
+      </details>
+
+      <!-- ============================================================
+           CERTIFICATIONS SECTION
+           Add one .card block per certification. Duplicate the example
+           block and fill in: certification name, issuing organization,
+           date earned, and (optionally) a credential link.
+      ============================================================= -->
+      <details class="accordion-item certifications" name="portfolio">
+        <summary class="accordion-header">
+          <span class="title"><span class="tag">&lt;</span>Certifications<span class="tag">/&gt;</span></span>
+        </summary>
+        <div class="accordion-body">
+          <div class="card-grid">
+
+            <!-- CERTIFICATION ENTRY EXAMPLE - replace with your real certifications -->
+            <div class="card">
+              <h3>Certified Systems Integrator</h3>
+              <span class="card-meta">BNSP Indonesia</span>
+              <span class="card-date">2022 &ndash; 2026</span>
+              <p>Docker VPS deployment, Nginx configuration, Prometheus &amp; Grafana integration.</p>
+            </div>
+
+            <div class="card">
+              <h3>Junior Penetration Tester</h3>
+              <span class="card-meta">TryHackMe</span>
+              <span class="card-date">2022 &ndash; 2026</span>
+              <p>Web attacks, network enumeration, privilege escalation.</p>
+            </div>
+
+            <div class="card">
+              <h3>Cybersecurity Engineer &amp; Penetration Tester Bootcamp</h3>
+              <span class="card-meta">X-Code Training</span>
+              <span class="card-date">2022 &ndash; 2026</span>
+              <p>Optional: add a short note or a link to the credential/verification page.</p>
+            </div>
+
+            <div class="card">
+              <h3>Linux Unhatched &amp; Introduction to Cybersecurity</h3>
+              <span class="card-meta">Cisco Networking Academy</span>
+              <span class="card-date">2022 &ndash; 2026</span>
+              <p>Optional: add a short note or a link to the credential/verification page.</p>
+            </div>
+
+            <div class="card">
+              <h3>AWS Cloud Practitioner Essentials, JavaScript &amp; SQL Database Fundamentals</h3>
+              <span class="card-meta">Dicoding Academy Indonesia</span>
+              <span class="card-date">2022 &ndash; 2026</span>
+              <p>Optional: add a short note or a link to the credential/verification page.</p>
+            </div>
+
+            <!-- Add more certification cards here -->
+
+          </div>
+        </div>
+      </details>
+
+      <!-- ============================================================
+           PROJECTS SECTION
+           Add one .card block per project. Duplicate the example block
+           and fill in: project title, tech stack, description, and a
+           link to the repo/live demo if available.
+      ============================================================= -->
+      <details class="accordion-item projects" name="portfolio">
+        <summary class="accordion-header">
+          <span class="title"><span class="tag">&lt;</span>Projects<span class="tag">/&gt;</span></span>
+        </summary>
+        <div class="accordion-body">
+          <div class="card-grid">
+
+            <!-- PROJECT ENTRY EXAMPLE - replace with your real projects -->
+            <div class="card">
+              <h3>Homelab Container Monitoring Stack</h3>
+              <span class="card-meta">Docker Compose, WSL, Nginx, Prometheus, Grafana &mdash; 2026</span>
+              <p>Engineered and orchestrated a containerized local monitoring system using Docker Compose on WSL architectures, using Nginx as a reverse proxy for routing isolation. Configured Prometheus agents to scrape real-time host parameters (CPU, memory, networking) via Node Exporter, with centralized Grafana dashboards for predictive capacity management.</p>
+              <a class="card-link" href="https://github.com/rizaldisakim" target="_blank" rel="noopener">View Project &rarr;</a>
+              <!-- Point the href above to your repo or live demo -->
+            </div>
+
+            <div class="card">
+              <h3>SSH Remote Security Hardening Deployment</h3>
+              <span class="card-meta">Kali Linux, Fail2Ban &mdash; 2025</span>
+              <p>Hardened remote authentication protocols on Kali Linux systems by disabling root logins, enforcing key-based asymmetric authentication, altering default network ports, and deploying Fail2Ban policies to actively block brute-force attacks.</p>
+              <a class="card-link" href="https://github.com/rizaldisakim" target="_blank" rel="noopener">View Project &rarr;</a>
+            </div>
+
+            <!-- Add more project cards here -->
+
+          </div>
+        </div>
+      </details>
+
+      <details class="accordion-item languages" name="portfolio">
+        <summary class="accordion-header">
+          <span class="title"><span class="tag">&lt;</span>Languages<span class="tag">/&gt;</span></span>
+        </summary>
+        <div class="accordion-body">
+          <p>I am fluent in the following languages:</p>
+          <!-- LANGUAGE INPUT: add/remove <li> pills as needed -->
+          <ul class="skill-tags">
+            <li>Indonesian (Native)</li>
+            <li>English (Professional Working Proficiency)</li>
+            <li>Arabic (Daily Factory Operations &amp; Professional Contexts)</li>
+            <li>German (Goethe-Zertifikat B1)</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion-item contact" name="portfolio">
+        <summary class="accordion-header">
+          <span class="title"><span class="tag">&lt;</span>Let's Connect<span class="tag">/&gt;</span></span>
+        </summary>
+        <div class="accordion-body">
+          <!-- CONTACT INPUT: update this blurb and add real links/email below -->
+          <p>I am always looking for new opportunities to grow and improve my skills. I enjoy connecting with others in the cybersecurity and IIoT/DevOps fields, sharing insights, and learning from various perspectives. Reach out to me and let's collaborate!</p>
+          <p>
+            <a class="card-link" href="mailto:rizaldisakims@gmail.com">rizaldisakims@gmail.com</a><br>
+            <a class="card-link" href="https://linkedin.com/in/rizaldisakimsuhadi/" target="_blank" rel="noopener">linkedin.com/in/rizaldisakimsuhadi</a><br>
+            <a class="card-link" href="https://github.com/rizaldisakim" target="_blank" rel="noopener">github.com/rizaldisakim</a>
+          </p>
+          <button id="contactButton">Contact Me</button>
+        </div>
+      </details>
+
+    </main>
+
+    <footer>
+      <p>Thank you for visiting!</p>
+    </footer>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
